@@ -40,7 +40,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <NavLink className="btn btn-ghost text-xl font-bold"><img className="w-8 h-8" src={Logo} alt="logo" /> <span className="text-blue-700 dark:text-gray-200"> HERO.IO </span></NavLink>
+          <NavLink className="btn btn-ghost text-xl font-semibold"><img className="w-8 h-8" src={Logo} alt="logo" /> <span className="text-purple-500 dark:text-gray-200"> HERO.IO </span></NavLink>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
