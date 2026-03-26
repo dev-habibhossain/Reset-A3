@@ -1,4 +1,6 @@
 import { NavLink } from "react-router";
+import Logo from "../../assets/logo.png";
+import { FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -31,14 +33,14 @@ const Navbar = () => {
                 <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <NavLink to="/app">App</NavLink>
+                <NavLink to="/apps">Apps</NavLink>
               </li>
               <li>
                 <NavLink to="/installation">Installation</NavLink>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <NavLink className="btn btn-ghost text-xl font-bold"><img className="w-8 h-8" src={Logo} alt="logo" /> <span className="text-blue-700 dark:text-gray-200"> HERO.IO </span></NavLink>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -46,7 +48,7 @@ const Navbar = () => {
                 <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <NavLink to="/app">App</NavLink>
+                <NavLink to="/apps">Apps</NavLink>
               </li>
               <li>
                 <NavLink to="/installation">Installation</NavLink>
@@ -54,7 +56,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <NavLink className="btn bg-purple-600 text-white dark:bg-olive-700"><FaGithub /><span>Contribute</span></NavLink>
         </div>
       </div>
     </>

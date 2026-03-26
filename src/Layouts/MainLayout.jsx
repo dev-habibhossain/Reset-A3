@@ -8,7 +8,10 @@ export default function MainLayout() {
         <div>
           <Navbar />
         </div>
-        <Outlet />
+        <div className='max-w-7xl mx-auto'>
+          <Outlet />
+        </div>
+        
         <div>
             {/* Footer */}
         </div>
